@@ -1,7 +1,0 @@
-c:\users\bing\documents\visual studio 2010\Projects\RepairManage\RepairManage\obj\Debug\ResolveAssemblyReference.cache
-c:\users\bing\documents\visual studio 2010\Projects\RepairManage\RepairManage\bin\RepairManage.dll
-c:\users\bing\documents\visual studio 2010\Projects\RepairManage\RepairManage\bin\RepairManage.pdb
-c:\users\bing\documents\visual studio 2010\Projects\RepairManage\RepairManage\bin\EntityFramework.dll
-c:\users\bing\documents\visual studio 2010\Projects\RepairManage\RepairManage\bin\EntityFramework.xml
-c:\users\bing\documents\visual studio 2010\Projects\RepairManage\RepairManage\obj\Debug\RepairManage.dll
-c:\users\bing\documents\visual studio 2010\Projects\RepairManage\RepairManage\obj\Debug\RepairManage.pdb
