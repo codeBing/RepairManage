@@ -1,0 +1,38 @@
+﻿@model RepairManage.Models.Administrator
+
+@{
+    ViewBag.Title = "登录";
+}
+
+<h2>维修中心管理系统</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>管理员登录</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.adminName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.adminName)
+            @Html.ValidationMessageFor(model => model.adminName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.adminPwd)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.adminPwd)
+            @Html.ValidationMessageFor(model => model.adminPwd)
+        </div>
+
+        <p>
+            <input type="submit" value="登录" />
+        </p>
+
+    </fieldset>
+}

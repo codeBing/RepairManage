@@ -1,0 +1,67 @@
+﻿@model RepairManage.Models.RepairDetail
+@{
+    ViewBag.Title = "创建维修单";
+}
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/addCss.js")" type="text/javascript"></script>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">
+                创建维修单</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+        <div class="col-lg-6">
+            @using (Html.BeginForm())
+            {
+                @Html.ValidationSummary(true)
+                <fieldset>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.computerId)
+                        @Html.EditorFor(model => model.computerId)
+                        @Html.ValidationMessageFor(model => model.computerId)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.faultMsg)
+                        @Html.EditorFor(model => model.faultMsg)
+                        @Html.ValidationMessageFor(model => model.faultMsg)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.repairMethod)
+                        @Html.EditorFor(model => model.repairMethod)
+                        @Html.ValidationMessageFor(model => model.repairMethod)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.repairCost)
+                        @Html.EditorFor(model => model.repairCost)
+                        @Html.ValidationMessageFor(model => model.repairCost)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.repairTime)
+                        @Html.EditorFor(model => model.repairTime)
+                        @Html.ValidationMessageFor(model => model.repairTime)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.customerName)
+                        @Html.EditorFor(model => model.customerName)
+                        @Html.ValidationMessageFor(model => model.customerName)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.phoneNumber)
+                        @Html.EditorFor(model => model.phoneNumber)
+                        @Html.ValidationMessageFor(model => model.phoneNumber)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.email)
+                        @Html.EditorFor(model => model.email)
+                        @Html.ValidationMessageFor(model => model.email)
+                    </div>
+                    <p>
+                        <input type="submit" value="保存" />
+                    </p>
+                </fieldset>
+            }
+        </div>
+    </div>
+</div>
